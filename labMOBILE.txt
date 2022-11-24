@@ -1,0 +1,59 @@
+1.The application is called "Guidy".If you love traveling, this is the app for you!It will help you plan your trip based on other users experiences, suggest places to visit and things to do based on your interests, and also based on your budget! You will also benefit from discounts at some of our partners.
+
+2.Entities:
+- Trips:
+	 A trip has more properties :- a starting and an ending date,
+				     - a destination (or lists of destinations)
+				     - a budget 
+				     - a number of persons
+			             - a list of interests.
+- Users :
+	An user has the following properties: - Username
+					      - Password
+					      - Trips (past, current and incoming)
+					      - Created trip plans
+					      - Rating
+An user will log in based on the username and password. It can see all the trips he completed, the one he is currently in and the ones he booked. Any user can also create trip plans, so other users can enjoy them and they can also be rated by users that completed their trip plans.
+
+3.CRUD:
+Create- A user can create a new trip plan. 
+		He must complete all of the fields of a trip( duration instead of 
+		starting and ending date, destination, budget, recommanded number of
+		participants, and the interests satisfied with his trip plan)
+
+Read- A user can broswe through the existing plans and select one to follow.
+	He can see all the datails of each existing plan, and he can choose to follow 
+	one of them. He then will insert the dates he wishes to follow the plan. 
+	Once the time has come, he will be able to see the scheduele for each day, and 
+	he can check all the activites that he has done that day from the list.
+
+Delete- A user can delete a selected plan that he booked, or he can delete on of his 
+        own trip plans. If he deletes a trip plan he booked, it wont affect the trip
+	plan itself, but if he delets his own trip plan it will delete it for all 
+	users.
+
+Update- A user can update his password and also his own trip plans.
+	To update the password he will need to put his old password. Updating a trip 
+	plan will update it for all users, but if a user has already booked the trip
+	it wont be updated because the updates might no longer satisfy the user.
+ 
+5.Online/Offline work case
+	
+	
+		-Read  : works only when the user is online
+			
+		-Update: works even when the user is offline but it updates on the
+			 server when he gets a connection
+
+		-Create: works even when the user is offline but it uploads on the 
+			 server when he gets a connection
+
+		-Delete: works even when the user is offline but it deletes on the
+			 server when he gets connection
+
+
+
+
+
+
+
